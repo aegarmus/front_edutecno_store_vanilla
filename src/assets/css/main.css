@@ -1,0 +1,46 @@
+#products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    width: 80%;
+
+    padding: 5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ccc;
+
+    padding: 1rem;
+
+    width: 18rem;
+
+    transition: .3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #4565bc;
+}
+
+.card__header {
+    border-bottom: solid 2px #454545;
+}
+
+.card__header h3 {
+    font-size: 2rem;
+}
+
+.card__header p {
+    color: #454545;
+    font-size: .8rem;
+}
+
