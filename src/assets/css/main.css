@@ -44,3 +44,77 @@
     font-size: .8rem;
 }
 
+.card__body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+}
+
+.btn-detail {
+    background-color: #4565bc;
+    color: #eee;
+
+    padding: .5rem;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.btn-detail:hover {
+    background-color: #65a9fa;
+    transform: scale(1.03);
+}
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal {
+    background-color: #eee;
+
+    width: 25rem;
+    padding: 1.5rem;
+
+    position: relative;
+
+    border-radius: 15px;
+
+    z-index: 1;
+}
+
+.modal span {
+    font-weight: bold;
+}
+
+.modal__close {
+    position: absolute;
+    top: .6rem;
+    right: .6rem;
+
+    background: none;
+    border: none;
+
+    font-size: 1.5rem;
+    color: #ac4545;
+
+    cursor: pointer;
+}
+

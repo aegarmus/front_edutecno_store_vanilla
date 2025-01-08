@@ -3,7 +3,7 @@ import { formatPrice } from "../utils/normalize/priceFormat.js";
 
 export const createProductsCards = (products) => {
     try {
-        
+
         let templateHtml = ''
 
         products.forEach(product => {
@@ -11,12 +11,13 @@ export const createProductsCards = (products) => {
                 <div class="card">
                     <div class="card__header">
                         <h3>${product.nombre}</h3>
-                        <p>${product.id}</p>
                     </div>
                     <div class="card__body">
-                        <p>${product.description}</p>
                         <p>Stock: ${product.stock}</p>
                         <p>${formatPrice(product.precio)}</p>
+                    </div>
+                    <div class="card__footer">
+                        <button class="btn-detail" data-id="${product.id}">Ver más</button>
                     </div>
                 </div>
             `;
