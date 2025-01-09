@@ -11,6 +11,6 @@ export const showModalDetail = (container, modalHtmlTemplate) => {
 
     closeBtn.addEventListener('click', () => removeModalDetail(overlay));
     overlay.addEventListener('click', (event) => {
-        if(event.target === overlay) removeModalDetail();
+        if(event.target === overlay) removeModalDetail(overlay);
     })
 }

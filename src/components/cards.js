@@ -17,7 +17,7 @@ export const createProductsCards = (products) => {
                         <p>${formatPrice(product.precio)}</p>
                     </div>
                     <div class="card__footer">
-                        <button class="btn-detail" data-id="${product.id}">Ver más</button>
+                        <button class="btn btn-detail" data-id="${product.id}">Ver más</button>
                     </div>
                 </div>
             `;

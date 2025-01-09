@@ -52,18 +52,20 @@
     width: 100%;
 }
 
-.btn-detail {
-    background-color: #4565bc;
-    color: #eee;
-
+.btn {
     padding: .5rem;
-
+        
     border: none;
     border-radius: 5px;
 
     cursor: pointer;
 
     transition: .3s;
+}
+
+.btn-detail {
+    background-color: #4565bc;
+    color: #eee;
 }
 
 .btn-detail:hover {
@@ -116,5 +118,58 @@
     color: #ac4545;
 
     cursor: pointer;
+}
+
+
+.register-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-registro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 1rem auto;
+    padding: 1rem;
+
+    width: 25rem;
+
+    box-shadow: 0 0 15px #ccc;
+    border-radius: 15px;
+}
+
+#form-registro input {
+    border-radius: 20px;
+
+    padding: .3rem 1rem;
+    margin: .5rem;
+
+    transition: .3s;
+}
+
+#form-registro input:focus {
+    outline: none;
+    box-shadow: 0 0 10px #65a9fa;
+}
+
+.btn-registro {
+    background-color: transparent;
+    border: solid 1px #4565bc;
+
+    color: #4565bc;
+
+    transition: .3s;
+}
+
+.btn-registro:hover {
+    background-color: #4565bc;
+    color: #eee;
+
+    box-shadow: 0 0 15px #65a9fa;
 }
 
